@@ -1,0 +1,131 @@
+<html>
+
+<head>
+
+<style>
+
+.tengah{
+
+text-align:center;
+
+}
+
+.kiri{
+
+text-align:left;
+
+}
+
+.kanan{
+
+text-align:right;
+
+}
+
+</style>
+
+<script language='JavaScript'>
+
+var txt="BERISI PESAN UNTUK KAMU ";
+
+var speed=300;
+
+var refresh=null;
+
+function action() { document.title=txt;
+
+txt=txt.substring(1,txt.length)+txt.charAt(0);
+
+refresh=setTimeout("action()",speed);}action();
+
+</script>
+
+<script type="text/javascript">
+
+flag=1
+
+function f1()
+
+{
+
+    alert("Thanks Udah pilih Jawaban YA")
+
+}
+
+function f()
+
+{
+
+    if(flag==1)
+
+        {
+
+            Bn.style.top=400
+
+            Bn.style.left=300
+
+            flag=2
+
+        }
+
+    else if(flag==2)
+
+        {
+
+            Bn.style.top=400
+
+            Bn.style.left=50
+
+            flag=3
+
+        }
+
+    else if(flag==3)
+
+        {
+
+            Bn.style.top=370
+
+            Bn.style.left=166
+
+            flag=1
+
+        }
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<style type="text/css">
+
+body{ background:url(https://1.bp.blogspot.com/-OM7jDPCcf-Q/X7scTer4CDI/AAAAAAAAACs/_E7rjFG-ikgw5hetZ3xm1Tzw927PR1ftQCLcBGAsYHQ/s750/c1af2e61018cb2a1a66150eb4d80aeda.gif); background-size:cover}#test{padding:20px}h1{text-align:center; color:#FFF}p{margin-bottom:10px; color:#FFF} </style>
+
+<p class="kiri"><img alt="B4YOU" src="https://media1.tenor.com/images/1243a77c6a44c5b065a836e075699128/tenor.gif?itemid=17084257" height="200" /></p>
+
+<p class="kiri">Hai Cewe....</p>
+
+<p class="kiri">Kamu mau gak jadi pacar aku?</p>
+
+<p class="kiri">PILIH IYA/TIDAK?</p>
+
+<div id="By" style="position:absolute; left:64px; top:370px; width:210px;
+
+height:210px;">
+
+<a href="https://api.whatsapp.com/send?phone=+6287838568655&text=Hi"><button>YA</button></a>
+
+</div>
+
+<div ID="Bn" style="position:absolute; left:166px; top:370px; width:210px; height:210px;">
+
+<input type="button" value=" TIDAK " onMouseOver="f()" />
+
+</div>
+
+</body>
+
+</html>
